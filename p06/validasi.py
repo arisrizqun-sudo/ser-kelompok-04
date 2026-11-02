@@ -11,7 +11,7 @@ def ke_angka(teks):
         raise ValueError("bukan angka")
 
 def dalam_rentang(nilai, bawah, atas):
-    return bawah < nilai < atas
+    return bawah <= nilai <= atas
 
 def periksa(teks, bawah=BATAS_BAWAH, atas=BATAS_ATAS):
     nilai = ke_angka(teks)

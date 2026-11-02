@@ -1,0 +1,17 @@
+from baca_log import baca_log, hitung_alasan
+
+try:
+    valid, ditolak = baca_log("log_mikrofon.cv")
+except FileNotFoundError:
+    print("Berkas tidak ditemukan")
+    valid, ditolak = [], []
+
+print("Jumlah data valid:", len(valid))
+print("Jumlah data ditolak:", len(ditolak))
+
+print("\nData yang ditolak:")
+for data in ditolak:
+    print(data)
+
+print("\nJumlah berdasarkan alasan:")
+print(hitung_alasan(ditolak))

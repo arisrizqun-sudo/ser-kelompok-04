@@ -10,3 +10,9 @@ Pastikan virtual environment (`.venv`) Anda sudah aktif, lalu jalankan program u
 ```powershell
 python suhu.py
 
+Cara Menjalankan Program Test:
+python -m pytest -v
+
+Identitas Mahasiswa:
+Nama: Mochamad Ainnur Wachid
+NIM : 33132501005
